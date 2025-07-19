@@ -1,0 +1,44 @@
+✅Colors, Units, fonts, Text properties, Background properties:
+
+• Colors
+    - Name, HEX, RGB, HSL
+• Units
+    - Absolute : https://prnt.sc/ZKe9vWf1dpeU
+    - Relative : https://prnt.sc/IKedoU8Z_3Rl
+• Text properties: 
+    1. Alignment
+        - text-align
+        - text-align-last
+        - direction
+        - unicode-bidi
+        - vertical-align
+    2. Decoration
+        - text-decoration-line
+        - text-decoration-color
+        - text-decoration-style
+        - text-decoration-thickness
+        - text-decoration
+    3. Transform
+    4. Spacing
+        - text-indent
+        - letter-spacing
+        - line-height                                                                                                       
+        - word-spacing
+        - white-space
+    5. Shadow
+    6. Fonts (https://prnt.sc/IJckPGRQGEhl)
+        - Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+        - Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+        - Monospace fonts - here all the letters have the same fixed width. They create a mechanical look.
+        - Cursive fonts imitate human handwriting.
+        - Fantasy fonts are decorative/playful fonts.
+        @font-face {
+            font-family: "Satoshi";
+            src: url("assets/fonts/Satoshi-Black.eot");
+            src: url("assets/fonts/Satoshi-Black.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Satoshi-Black.woff2") format("woff2"), url("assets/fonts/Satoshi-Black.woff") format("woff"), url("assets/fonts/Satoshi-Black.ttf") format("truetype");
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+• Image and background
