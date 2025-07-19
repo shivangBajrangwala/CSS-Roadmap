@@ -1,0 +1,8 @@
+✅Colors, Units, and Text properties, Background properties:
+
+• Color formats: Name, HEX, RGB, HSL
+• Units: px, %, em, rem, vh, vw
+• Font properties: family, size, weight, style, line-height, letter-spacing Practice (1hr):
+• Style headings, paragraphs, links, images
+• Create a simple blog post layout and style with custom fonts, colors, spacing
+• Add Google Fonts to the project
