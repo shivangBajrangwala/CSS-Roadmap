@@ -22,11 +22,11 @@
     4. Spacing
         - text-indent
         - letter-spacing
-        - line-height                                                                                                       
+        - line-height
         - word-spacing
         - white-space
     5. Shadow
-    6. Fonts (https://prnt.sc/IJckPGRQGEhl)
+    6. Fonts (https://prnt.sc/IJckPGRQGEhl, https://www.fontshare.com/)
         - Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
         - Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
         - Monospace fonts - here all the letters have the same fixed width. They create a mechanical look.
@@ -42,3 +42,13 @@
         }
         
 • Image and background
+    - Background 
+        - background-color
+        - background-image
+        - background-repeat
+        - background-position
+        - background-size
+        - background-attachment
+    - Image properties
+        - object-fit
+        - object-position
