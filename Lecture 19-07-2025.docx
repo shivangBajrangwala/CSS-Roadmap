@@ -52,3 +52,16 @@
     - Image properties
         - object-fit
         - object-position
+    - Mask Image (https://mdn.github.io/shared-assets/images/examples/mask-star.svg)
+
+
+    • Icons
+    - Font awesome
+    - Google Icons
+
+• Lists
+    - ul
+    - ol
+    - dl
+    list-style-type
+    list-style-position
