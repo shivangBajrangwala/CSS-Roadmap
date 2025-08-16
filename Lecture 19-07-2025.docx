@@ -62,6 +62,127 @@
 • Lists
     - ul
     - ol
-    - dl
+    -dl
+    
+    <h2>Contact Information</h2>
+<dl>
+  <dt>Email</dt>
+  <dd>support@example.com</dd>
+
+  <dt>Phone</dt>
+  <dd>+1 (555) 123-4567</dd>
+
+  <dt>Office Hours</dt>
+  <dd>Mon–Fri, 9:00 AM – 6:00 PM</dd>
+</dl>
+
     list-style-type
     list-style-position
+
+• Tables (<caption>, rowspan, colspan, )
+    <style>
+      body {
+        background-color: #121212;
+        color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 12px;
+        border: 1px solid #2d2d2d; /* Border for each cell */
+      }
+      th {
+        background-color: #1e293b; /* Dark blue-gray header */
+        color: #ffffff;
+      }
+      tr:nth-child(even) {
+        background-color: #1a1a1a; /* Dark gray for even rows */
+      }
+      tr:nth-child(odd) {
+        background-color: #0f0f0f; /* Slightly darker for odd rows */
+      }
+    </style>
+    <table>
+      <tr>
+        <th>Property</th>
+        <th>Usage</th>
+        <th>Benefit</th>
+      </tr>
+      <tr>
+        <td>static</td>
+        <td>Default positioning; elements follow normal document flow.</td>
+        <td>Simple and predictable; no extra positioning rules needed.</td>
+      </tr>
+      <tr>
+        <td>relative</td>
+        <td>Positioned relative to its normal position using top/right/bottom/left.</td>
+        <td>Allows small adjustments without removing from flow.</td>
+      </tr>
+      <tr>
+        <td>absolute</td>
+        <td>Positioned relative to the nearest positioned ancestor.</td>
+        <td>Gives precise placement; removes element from normal flow.</td>
+      </tr>
+      <tr>
+        <td>fixed</td>
+        <td>Positioned relative to the viewport; stays fixed on scroll.</td>
+        <td>Great for sticky headers, navbars, and floating buttons.</td>
+      </tr>
+      <tr>
+        <td>sticky</td>
+        <td>Acts like relative until a scroll threshold, then sticks in place.</td>
+        <td>Useful for sticky table headers or sections in long pages.</td>
+      </tr>
+    </table>
+
+    <table>
+  <caption>Restaurant Lunch Menu – Summer Specials</caption>
+
+  <!-- Column styling -->
+  <colgroup>
+    <col style="width: 40%; background-color: #f9f9f9;">
+    <col style="width: 30%;">
+    <col style="width: 30%;">
+  </colgroup>
+
+  <thead>
+    <tr>
+      <th rowspan="2">Dish</th> <!-- Header spans 2 rows -->
+      <th colspan="2">Price</th> <!-- Header spans 2 columns -->
+    </tr>
+    <tr>
+      <th>Regular</th>
+      <th>Large</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td rowspan="2"><strong>Grilled Chicken Salad</strong><br>Fresh greens, grilled chicken, vinaigrette</td>
+      <td>$8.50</td>
+      <td>$10.00</td>
+    </tr>
+    <tr>
+      <!-- This row only has price cells because Dish cell is merged -->
+      <td colspan="2">Add avocado for $2</td> <!-- Colspan for a note -->
+    </tr>
+
+    <tr>
+      <td><strong>Margherita Pizza</strong><br>Fresh mozzarella, tomato, basil</td>
+      <td>$9.00</td>
+      <td>$12.00</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="3">* All prices include tax</td>
+    </tr>
+  </tfoot>
+</table>
