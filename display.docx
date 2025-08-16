@@ -1,0 +1,87 @@
+✅Display properties:
+
+Flex : 
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+
+<div class="flex-container">
+  <div class="flex-item">Item</div>
+  <div class="flex-item">Item</div>
+  <div class="flex-item">Item</div>
+  <div class="flex-item">Item</div>
+</div>
+
+<style>
+  .flex-container {
+    display: flex;
+    gap: 1rem;
+    counter-reset: my-counter; /* reset the counter at container start */
+  }
+
+  .flex-item {
+    background: #444;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  /* Add the counter before each item */
+  .flex-item::after {
+    counter-increment: lorem; /* increase the counter */
+    content: counter(my-counter) ""; /* show the counter number */
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+</style>
+
+<!-- flex shrink example -->
+<div class="profile-card">
+  <div class="profile-image">
+    <img
+      src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow@2x.png"
+      alt="User Photo"
+    />
+  </div>
+  <div class="profile-info">
+    <h2>Jane Doe</h2>
+    <p>
+      Frontend developer with a love for crafting beautiful, responsive designs.
+      Passionate about user experience and clean code.
+    </p>
+  </div>
+</div>
+<style>
+  .profile-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  /* Fixed width image container */
+  .profile-image {
+    width: 100px; /* fixed size */
+    flex-shrink: 0; /* prevent shrinking */
+  }
+
+  /* Image styling */
+  .profile-image img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  /* Flexible text container */
+  .profile-info {
+    flex-grow: 1; /* take up remaining space */
+    padding-left: 1rem;
+  }
+</style>
