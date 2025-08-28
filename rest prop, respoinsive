@@ -86,3 +86,44 @@ border-radius-image-gradient, transforms, functions
 #myDiv3 {
   transform: matrix(2, 1, 0.5, 1, 90, 70);
 }
+
+
+
+
+
+
+
+
+
+
+
+OPACITY, VISIBILITY, TRANSITION, ANIMATIONS, FILTERS, MASKING,  
+
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+
+
+@keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation
+
+
+blur()
+brightness()
+contrast()
+drop-shadow()
+grayscale()
+hue-rotate()
+invert()
+opacity()
+saturate()
+sepia()
